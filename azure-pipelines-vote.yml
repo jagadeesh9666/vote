@@ -57,7 +57,7 @@ stages:
   - job: push
     displayName: push
     steps:
-- task: ShellScript@2
-  inputs:
-    scriptPath: 'scripts/updatek8smanifests.yaml'
-    args: 'vote $imageRepository $ tag'
+    - task: ShellScript@2
+      inputs:
+      scriptPath: 'scripts/updatek8smanifests.yaml'
+      args: 'vote $imageRepository $ tag'
