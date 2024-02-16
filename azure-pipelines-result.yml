@@ -57,5 +57,5 @@ stages:
     steps:
     - task: ShellScript@2
       inputs:
-        scriptPath: 'scripts/resultk8smanifests.yaml'
-        args: 'vote $(imageRepository) $ (tag)'
+        scriptPath: 'scripts/updatek8smanifests.yaml'
+        args: 'result $(imageRepository) $ (tag)'
